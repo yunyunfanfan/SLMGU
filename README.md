@@ -1,10 +1,20 @@
 # SLMGU: Score-Guided Low-Rank Mixture for Knowledge Graph Triple Unlearning
 
-This repository contains the anonymous implementation accompanying an anonymous submission on knowledge graph triple unlearning.
+This repository contains the official implementation of **When Relations Shape Forgetting: Score-Guided Low-Rank Mixture Framework for Knowledge Graph Triple Unlearning**.
 
 SLMGU updates a pretrained relational graph neural network after a request to forget selected triples. It freezes the original backbone, applies lightweight residual deletion operators to the affected subgraph, and optimizes an operational deletion-faithfulness objective: deleted triples should lose their observed-edge score advantage while retained knowledge remains useful.
 
 > **Scope.** SLMGU targets empirical deletion faithfulness. It does not provide certified unlearning or guarantee functional equivalence to retain-only retraining.
+
+## Authors
+
+Yunjian Zhang*, Yuxi Liu*, Yutong Wang*, Yunrui Shang, Lingjia Yuan, and Zhongfeng Kang.
+
+School of Information Science and Engineering, Lanzhou University, Lanzhou, 730000, Gansu, China.
+
+*The first three authors contributed equally. Zhongfeng Kang is the corresponding author.*
+
+Contact: `kangzf@lzu.edu.cn`, `kangzhf@gmail.com`
 
 ## Method at a Glance
 
@@ -346,9 +356,16 @@ Each trained checkpoint directory contains model files and `trainer_log.json`. S
 - Record all command-line overrides in addition to the base YAML file.
 - Do not compare different deletion rates as if they were the same protocol.
 
-## Anonymous-Submission Notice
+## Citation
 
-This artifact is prepared for anonymous review. Author names, affiliations, personal pages, paper URLs, personal repository links, and identifying contact information are intentionally omitted. Citation metadata will be added after the review process.
+```bibtex
+@software{slmgu2026,
+  author = {Yunjian Zhang and Yuxi Liu and Yutong Wang and Yunrui Shang and Lingjia Yuan and Zhongfeng Kang},
+  title  = {SLMGU: Score-Guided Low-Rank Mixture for Knowledge Graph Triple Unlearning},
+  year   = {2026},
+  url    = {https://github.com/yunyunfanfan/SLMGU}
+}
+```
 
 ## License
 
