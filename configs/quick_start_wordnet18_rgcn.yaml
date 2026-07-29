@@ -1,0 +1,10 @@
+mode: evaluate
+unlearning_model: original
+gnn: rgcn
+dataset: WordNet18
+random_seed: 42
+data_dir: ./datasets
+checkpoint_dir: ./checkpoints
+output_dir: ./outputs/results
+batch_size: 1024
+num_steps: 32

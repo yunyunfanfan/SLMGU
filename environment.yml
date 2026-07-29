@@ -1,0 +1,25 @@
+name: slmgu
+channels:
+  - pytorch
+  - nvidia
+  - pyg
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch>=2.1
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - pyg
+  - numpy
+  - scipy
+  - scikit-learn
+  - tqdm
+  - pyyaml
+  - pandas
+  - matplotlib
+  - networkx
+  - pip:
+      - ogb>=1.3.6

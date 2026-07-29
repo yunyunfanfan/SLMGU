@@ -1,0 +1,12 @@
+mode: train
+unlearning_model: original
+gnn: compgcn
+dataset: WordNet18
+random_seed: 42
+data_dir: ./datasets
+checkpoint_dir: ./outputs/checkpoints
+output_dir: ./outputs/results
+batch_size: 1024
+num_steps: 32
+compgcn_opn: mult
+compgcn_dropout: 0.0
